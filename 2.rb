@@ -1,5 +1,5 @@
 def extra_end(str)
-  # 処理を記述
+  puts str.slice(-2, 2) * 3
 end
 
 # 呼び出し例
