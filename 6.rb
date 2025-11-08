@@ -1,4 +1,8 @@
 def end_other(a, b)
+  a_down = a.downcase
+  b_down = b.downcase
+  a_len = a_down.length
+  b_len = b_down.length
   
 end
 
