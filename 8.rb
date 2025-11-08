@@ -1,6 +1,6 @@
 def withdraw(balance, amount)
   fee = 110
-# 引き落とし額と残高を表示する、もしくは残高より多く引き落としたら残高不足と表示
+
 end
 
 balance = 100000
