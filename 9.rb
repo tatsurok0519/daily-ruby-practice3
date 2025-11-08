@@ -1,5 +1,5 @@
 def lone_sum(ary)
-  
+  puts ary.select{|n| ary.count(n)==1}.sum
 end
 
 # 呼び出し例
