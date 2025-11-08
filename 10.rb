@@ -1,3 +1,21 @@
+def binary_search(array, number_of_elements, target)
+  left = 0
+  right = number_of_elements - 1
+  while left <= right do
+    mid = (left + right) / 2
+    if array[mid] == target
+      return mid
+    elsif array[mid] < target
+      left = mid + 1
+    else
+      right = mid - 1
+    end
+  end
+  return -1
+end
+
+
+
 array=[1,3,5,6,9,10,13,20,26,31]
 puts "検索したい数字を入力してください"
 target = gets.to_i
