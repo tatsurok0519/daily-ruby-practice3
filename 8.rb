@@ -1,6 +1,8 @@
 def withdraw(balance, amount)
   fee = 110
-
+  total = amount + fee
+  if total <= balance
+    puts "#{amount}円引き落としました。残高は#{balance - total}円です"
 end
 
 balance = 100000
