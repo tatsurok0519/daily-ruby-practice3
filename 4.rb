@@ -4,11 +4,11 @@ def calculate_points(amount, is_birthday)
   else
     point = amount * 0.05
   end
-  
-
-
-
-
+  if is_birthday
+    point = point * 5
+  end
+  puts "ポイントは#{point}点です"
+end
 
 calculate_points(500, false)
 calculate_points(2000, false)
