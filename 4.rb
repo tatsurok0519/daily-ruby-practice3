@@ -7,7 +7,7 @@ def calculate_points(amount, is_birthday)
   if is_birthday
     point = point * 5
   end
-  puts "ポイントは#{point}点です"
+  puts "ポイントは#{point.to_i}点です"
 end
 
 calculate_points(500, false)
