@@ -16,15 +16,18 @@ def registration_student
 end
 
 def show_student_name
-  # 登録された生徒の名前を番号を振って表示する
   puts '見たい生徒の番号を入力してください'
+  students.each_with_index do |student, index|
+    puts "[#{index}] #{student[:name]}"
+  end
+  input = gets.to_i
+  student = students[input]
 
-  # 選択された生徒の名前、年齢、国語、数学、英語の点数を表示できるようにする
-  puts "名前:"
-  puts "年齢:"
-  puts "国語:"
-  puts "数学:"
-  puts "英語:"
+  puts "名前: #{student[:name]}"
+  puts "年齢: #{student[:age]}"
+  puts "国語: #{student[:japanese]}"
+  puts "数学: #{student[:math]}"
+  puts "英語: #{student[:english]}"
 end
 
 students = []
