@@ -1,5 +1,5 @@
 def xyz_there(str)
-  if str.include?(.xyz)
+  if str.include?(".xyz")
     puts "False"
   elsif str.include?("xyz")
     puts "True"
