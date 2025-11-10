@@ -1,4 +1,6 @@
 def xyz_there(str)
+  if str.include?(.xyz)
+    puts "False"
   
 end
 
