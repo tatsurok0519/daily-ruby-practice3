@@ -1,13 +1,18 @@
 def registration_student
-  # 生徒の名前と年齢を登録できるようにする
   student = {}
   puts '生徒名を入力してください'
+  student[:name] = gets.chomp
   puts '生徒の年齢を入力してください'
+  student[:age] = gets.to_i
 
-  # 登録した生徒の国語、数学、英語の点数を登録できるようにする
   puts "国語の得点は？"
+  student[:japanese] = gets.to_i
   puts "数学の得点は？"
+  student[:math] = gets.to_i
   puts "英語の得点は？"
+  student[:english] = gets.to_i
+
+  students << student
 end
 
 def show_student_name
