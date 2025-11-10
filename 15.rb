@@ -1,4 +1,4 @@
-def registration_student
+def registration_student(students)
   student = {}
   puts '生徒名を入力してください'
   student[:name] = gets.chomp
@@ -15,7 +15,7 @@ def registration_student
   students << student
 end
 
-def show_student_name
+def show_student_name(students)
   puts '見たい生徒の番号を入力してください'
   students.each_with_index do |student, index|
     puts "[#{index}] #{student[:name]}"
@@ -39,9 +39,9 @@ while true
   puts '[3]終了する'
   input = gets.to_i
   if input == 1
-    registration_student
+    registration_student(students)
   elsif input == 2
-    show_student_name
+    show_student_name(students)
   elsif input == 3
     exit
   else
