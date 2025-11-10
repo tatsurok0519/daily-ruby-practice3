@@ -6,7 +6,12 @@ def near_ten(num)
 
   if total % 10 <= 2 || total % 10 >= 8
     puts "True"
-  
+  elsif total <= 5
+    puts "10の倍数との差は#{total}です"
+  else
+    puts "10の倍数との差は#{10 - total}です"
+  end
+end
 
 near_ten(117)
 near_ten(123)
