@@ -1,4 +1,8 @@
 def near_ten(num)
+  hundreds = num / 100
+  tens = (num % 100) / 10
+  ones = num % 10
+  total = hundreds + tens + ones
 
 near_ten(117)
 near_ten(123)
