@@ -1,6 +1,12 @@
 require "date"
 
 day = Date.today.wday
-days
+days = ["日","月","火","水","木","金","土"]
+
+  if day == 5
+    day = "今日は#{days[day]}曜日だ！！！"
+  else
+    day = "今日は#{days[day]}曜日"
+  end
 
 puts day
