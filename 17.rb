@@ -4,3 +4,8 @@ user_data = [
  {user: {profile: {name: 'Taro'}}},
 ]
 
+names = user_data.map do |data|
+ data[:user][:profile][:name]
+end
+
+puts names
