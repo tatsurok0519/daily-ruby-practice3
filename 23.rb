@@ -14,6 +14,5 @@ class Article
 
 end
 
-著者: 阿部
-タイトル: Rubyの素晴らしさについて
-本文: Awesome Ruby!
+article = Article.new("阿部","Rubyの素晴らしさについて","Awesome Ruby!")
+article.display
