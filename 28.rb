@@ -4,6 +4,8 @@ def check_name(str)
   elsif str.include?(" ")
     puts "!エラー!空白は登録できません"
   else
+    puts "登録が完了しました"
+  end
 end
 
 puts "登録したい名前を入力してください(例)YamadaTaro"
