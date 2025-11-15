@@ -1,3 +1,5 @@
 input = gets.to_i
 
-# ここからソースコードを書いてください
+  if input <= 0
+    puts "0以下の数字です"
+  
