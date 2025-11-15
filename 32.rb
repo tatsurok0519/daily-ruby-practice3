@@ -1,10 +1,11 @@
 class Fruit
- def クラスメソッド
-   # 正しくメソッドを定義した上で、ここに処理を記入してください
+ def self.flesh
+   puts "採れたて新鮮な果実です"
  end
 
  def initialize
-   # ここに処理を記入してください
+   @name = name
+   @price = price
  end
 
  def インスタンスメソッド
