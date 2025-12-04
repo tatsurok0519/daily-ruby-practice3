@@ -6,4 +6,5 @@ d = c * 2
 puts d
 e = d - a
 puts e
-f = e / 5 
+f = e / 5
+puts f 
