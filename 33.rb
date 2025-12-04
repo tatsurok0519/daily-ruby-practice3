@@ -8,4 +8,5 @@ e = d - a
 puts e
 f = e / 5
 puts f
-g = f % 3 
+g = f % 3
+puts g 
