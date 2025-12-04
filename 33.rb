@@ -7,4 +7,5 @@ puts d
 e = d - a
 puts e
 f = e / 5
-puts f 
+puts f
+g = f % 3 
