@@ -4,4 +4,5 @@ c = a + b
 puts c
 d = c * 2
 puts d
-e = d - a 
+e = d - a
+puts e 
